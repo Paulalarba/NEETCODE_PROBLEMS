@@ -35,3 +35,23 @@ def hashset(num):
     return False
 print(hashset([1, 2, 3, 4, 1]))
 print(hashset([1, 2, 3, 4, 5]))
+
+
+def brutforce2(nums):
+    n = len(nums)
+    for i in range(n):
+        for j in range(i + 1, n):
+            if nums[i] == nums[j]:
+                return True
+    return False
+
+print(brutforce2([1, 2, 3, 4, 1]))
+
+def hashset2(nums):
+    x = set()
+    for i in nums:
+        if i in x:
+            return True
+        x.add(i)
+    return False
+print(hashset2([1, 2, 1]))
