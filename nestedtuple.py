@@ -7,10 +7,10 @@ print(nested)
 
 for i in range(len(nested)):
     print(f"Row {i + 1} sum: {sum(nested[i])}")
-    
+
 nested_copy = nested[:]
 print(nested_copy)
 
 numbers = [5, 3, 8, 1]
-numbers.sort()              # sort in ascending order
+numbers.sort() 
 print(numbers)
